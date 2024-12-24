@@ -1,0 +1,246 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.top {
+    background-image: url('images/desktop/image-header.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .top {
+          background-image: url('images/mobile/image-header.jpg');
+          height: 100vh;
+        }
+}
+
+#learn {
+    border-bottom: 10px solid yellow;
+}
+
+#learn2 {
+    border-bottom: 10px solid red;
+}
+
+#learn h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+}
+
+#section2 {
+    background-image: url('images/desktop/image-transform.jpg'); height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    #section2 {
+          background-image: url('images/mobile/image-transform.jpg');
+          height: 50vh;
+          background-repeat: no-repeat;
+          background-size: cover; 
+          background-position: center;
+        }
+}
+
+#section3 {
+    background-image: url('images/desktop/image-stand-out.jpg');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    #section3 {
+          background-image: url('images/mobile/image-stand-out.jpg');
+          height: 50vh;
+          background-repeat: no-repeat;
+          background-size: cover; 
+          background-position: center;
+        }
+}
+
+#graphic {
+   background-image: url('images/desktop/image-graphic-design.jpg');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+#graphic h1 {
+    color: rgb(0, 90, 0);
+}
+
+#graphic p {
+    color: rgb(0, 90, 0);
+}
+
+@media (max-width: 768px) {
+    #graphic {
+          background-image: url('images/mobile/image-graphic-design.jpg');
+          height: 60vh;
+          background-repeat: no-repeat;
+          background-size: cover; 
+          background-position: center;
+        }
+}
+
+#photography {
+    background-image: url('images/desktop/image-photography.jpg');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+#photography h1 {
+    color: rgb(95, 95, 202);
+}
+
+#photography p {
+    color: rgb(95, 95, 202);
+}
+
+@media (max-width: 768px) {
+    #photography {
+          background-image: url('images/mobile/image-photography.jpg');
+          height: 60vh;
+          background-repeat: no-repeat;
+          background-size: cover; 
+          background-position: center;
+        }
+}
+
+#fstimage {
+    background-image: url('images/desktop/image-gallery-milkbottles.jpg');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    #fstimage {
+          background-image: url('images/mobile/image-gallery-milkbottles.jpg');
+          height: 30vh;
+          background-repeat: no-repeat;
+          background-size: cover; 
+          background-position: center;
+        }
+}
+
+#sndimage {
+    background-image: url('images/desktop/image-gallery-orange.jpg');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    #sndimage {
+          background-image: url('images/mobile/image-gallery-orange.jpg');
+          height: 30vh;
+          background-repeat: no-repeat;
+          background-size: cover; 
+          background-position: center;
+        }
+}
+
+#trdimage {
+    background-image: url('images/desktop/image-gallery-cone.jpg');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    #trdimage {
+          background-image: url('images/mobile/image-gallery-cone.jpg');
+          height: 30vh;
+          background-repeat: no-repeat;
+          background-size: cover; 
+          background-position: center;
+        }
+}
+
+#fthimage {
+    background-image: url('images/desktop/image-gallery-sugarcubes.jpg');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    #fthimage {
+          background-image: url('images/mobile/image-gallery-sugar-cubes.jpg');
+          height: 30vh;
+          background-repeat: no-repeat;
+          background-size: cover; 
+          background-position: center;
+        }
+}
+
+footer {
+    background-color: rgb(166, 214, 166);
+    color: lawngreen;
+    text-align: center;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px); 
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
